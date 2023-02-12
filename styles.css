@@ -1,0 +1,142 @@
+html, *, *:after, *:before{
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+  }
+  html, body{
+      min-width: 290px;
+      background-color: black;
+      color:white;
+      font-family: 'Open Sans', Arial, sans-serif;
+      line-height: 1.5;
+  }
+  #main-doc{
+    margin-left:350px;
+    position:absolute;
+    padding:10px 5px;
+    margin-right:5px;
+  }
+  header{
+    font-size:1.8em;
+    font-weight:bold;
+    color:gold;
+  }
+  code{
+    display:block;
+    line-height:2;
+    border-radius:5px;
+    padding:15px;
+    margin:10px;
+    background:#f7f7f7;
+    color:black;
+    white-space:pre-line;
+  }
+  #navbar{
+    display:block;
+    border-right: solid white;
+    position:fixed;
+    top:0;
+    left:0;
+    width:300px;
+    height:100%;
+  }
+  #navbar header{
+    padding:10px;
+    color:Gold;
+  }
+  #navbar ul{
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .nav-link{
+    display:block;
+    border-top:1px solid white;
+    padding:10px 30px;
+    text-decoration:none;
+    color: white;
+  }
+  .nav-link:hover{
+    background:white;
+    color:black;
+    text-decoration:underline;
+    transition: all 0.5s ease;
+  }
+  @media (max-width:705px) and (min-width: 580px){
+    #navbar{
+      width:26%;
+      overflow:hidden;
+    }
+    .nav-link{
+    padding:3px;
+    font-size:16px;
+    }
+    #main-doc{
+      width:62%;
+      margin-left:30%;
+      font-size:17px;
+    }
+    .main-section p{
+      margin-bottom:7px;
+    }
+    #main-doc header{
+      font-size:24px;
+    }
+    #navbar header{
+      font-size:16px;
+      padding:1;
+      text-align:center;
+    }
+  }
+  @media (max-width:580px) and (min-width:535px){
+    #navbar{
+      width:20%;
+      overflow:hidden;
+    }
+    .nav-link{
+    padding:3px;
+    font-size:15px;
+    }
+    #main-doc{
+      width:68%;
+      margin-left:24%;
+      font-size:17px;
+    }
+    .main-section p{
+      margin-bottom:7px;
+    }
+    #main-doc header{
+      font-size:24px;
+    }
+    #navbar header{
+      font-size:14px;
+      padding:1;
+      text-align:center;
+    }
+  }
+  @media (max-width:535px){
+    #navbar{
+      width:20%;
+      overflow:hidden;
+    }
+    .nav-link{
+    padding:3px;
+    font-size:14px;
+    }
+    #main-doc{
+      width:65%;
+      margin-left:24%;
+      font-size:17px;
+    }
+    .main-section p{
+      margin-bottom:7px;
+    }
+    #main-doc header{
+      font-size:24px;
+    }
+    #navbar header{
+      font-size:12px;
+      padding:1;
+      text-align:center;
+    }
+  }
